@@ -92,7 +92,7 @@
     transform: rotate(15deg) scale(1.05);
     z-index: 2;
     filter: none;
-    box-shadow: 0 .5rem 1rem 2rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 0.5rem 1rem 2rem rgba(0, 0, 0, 0.15) !important;
     border: 0.25rem dashed var(--bs-yellow);
   }
 
@@ -114,3 +114,23 @@
     left: 100vw;
   }
 }
+
+/*#region .card-skill */
+.card-skill {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 350ms, transform 500ms;
+}
+
+.card-skill.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/*#endregion */
+
+/* #region text about-us */
+.text-wrapper {
+  word-break: break-all;
+  padding: 0 2rem;
+}
+/*#endregion */
